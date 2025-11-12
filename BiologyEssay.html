@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essay: Mitosis and Meiosis</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.8;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px 40px;
+      background-color: #f9f9fc;
+      color: #222;
+    }
+
+    h1, h2, h3, h4 {
+      color: #1e62a0;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #1e62a0;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.7em;
+      margin-top: 45px;
+      margin-bottom: 15px;
+      border-left: 5px solid #1e62a0;
+      padding-left: 10px;
+    }
+
+    h3 {
+      font-size: 1.3em;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #264b73;
+    }
+
+    h4 {
+      font-size: 1.15em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #2f3e54;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 25px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e6f0ff;
+      font-weight: bold;
+      color: #1e62a0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f5f8fd;
+    }
+
+    .highlight {
+      background-color: #cfe2ff;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #e2e6f0;
+      margin: 40px 0;
+    }
+
+    /* ---- Mitosis layout ---- */
+    .mitosis-phase {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin: 30px 0;
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .mitosis-text {
+      flex: 1;
+    }
+
+    .mitosis-img {
+      flex: 1;
+      max-width: 45%;
+    }
+
+    /* Alternate image sides */
+    .mitosis-phase:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 700px) {
+      .mitosis-phase {
+        flex-direction: column;
+        text-align: center;
+      }
+      .mitosis-img {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mitosis and Meiosis</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Cell division is an essential biological process that occupies a central role in a cell’s life. From its birth to its eventual death, it enables the formation of two new cells that may or may not be genetically identical to their original mother cell. At the multicellular level, cell division allows organisms to grow, repair tissue, and reproduce.
+      </p>
+    </section>
+
+    <section>
+      <h2>Chromosomes</h2>
+      <p>
+        DNA carries all the instructions that make an organism function, but it needs organization. Histones act as spools around which DNA winds, forming nucleosomes. These coil into chromatin, which further condenses into chromosomes.
+      </p>
+      <img src="Diagram-of-Chromosomes.webp" alt="Chromosome structure diagram">
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Interphase</h2>
+      <p>
+        Before mitosis, a cell spends most of its time in interphase, where it grows, replicates DNA, and prepares to divide.
+      </p>
+      <img src="Screenshot 2025-11-12 112338.png" alt="Interphase stages">
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Mitosis</h2>
+      <p>
+        Mitosis divides one cell into two identical ones. It consists of several distinct stages.
+      </p>
+
+      <div class="mitosis-phase">
+        <div class="mitosis-text">
+          <h4>Prophase</h4>
+          <p>The nuclear envelope breaks down, and condensed chromosomes—each with two sister chromatids—attach to spindle fibers via their kinetochores.</p>
+        </div>
+        <img class="mitosis-img" src="Screenshot 2025-11-12 113129.png" alt="Prophase diagram">
+      </div>
+
+      <div class="mitosis-phase">
+        <div class="mitosis-text">
+          <h4>Metaphase</h4>
+          <p>Chromosomes align along the equatorial plate at the cell’s midline.</p>
+        </div>
+        <img class="mitosis-img" src="Screenshot 2025-11-12 114356.png" alt="Metaphase diagram">
+      </div>
+
+      <div class="mitosis-phase">
+        <div class="mitosis-text">
+          <h4>Anaphase</h4>
+          <p>Sister chromatids separate and move toward opposite poles, ensuring each new nucleus receives a complete chromosome set.</p>
+        </div>
+        <img class="mitosis-img" src="Screenshot 2025-11-12 114753.png" alt="Anaphase diagram">
+      </div>
+
+      <div class="mitosis-phase">
+        <div class="mitosis-text">
+          <h4>Telophase</h4>
+          <p>Chromosomes de-condense back into chromatin. New nuclear envelopes form, marking the end of mitosis and leading into cytokinesis.</p>
+        </div>
+        <img class="mitosis-img" src="Screenshot 2025-11-12 115500.png" alt="Telophase diagram">
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Meiosis</h2>
+      <p>
+        Meiosis produces gametes with half the original chromosome number, introducing genetic diversity essential for sexual reproduction.
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Comparison</h2>
+      <table>
+        <tr>
+          <th>Feature</th><th>Mitosis</th><th>Meiosis</th>
+        </tr>
+        <tr>
+          <td>Purpose</td><td>Growth, repair, maintenance</td><td>Gamete production</td>
+        </tr>
+        <tr>
+          <td>Number of Divisions</td><td>One</td><td>Two</td>
+        </tr>
+        <tr>
+          <td>Chromosome Number</td><td>2n → 2n</td><td>2n → n</td>
+        </tr>
+        <tr>
+          <td>Genetic Variation</td><td>None</td><td>High (crossing over)</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>
+        Mitosis ensures growth and repair, while meiosis fuels evolution through genetic variety. Together, they sustain and diversify life.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
